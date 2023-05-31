@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet"> 
 
     <link rel="stylesheet" type="text/css" href="default.css">
+
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
 </head>
 <body>
 
@@ -40,10 +42,10 @@
             <h5 style="text-align: center; line-height: 0;">Personalised Theme</h5>
          
             <div id="theme-options-wrapper">
-                <div id="light-mode" class="theme-dot"></div>
-                <div id="blue-mode" class="theme-dot"></div>
-                <div id="green-mode" class="theme-dot"></div>
-                <div id="purple-mode" class="theme-dot"></div>
+                <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
             </div>
             <p id="setting-note">*Theme setting will be saved for<br>your next visit</p>
         </div>
@@ -67,21 +69,106 @@
 
     <section class="s2">
         <div class="main-container">
-            About
+           <div class="about-wrapper">
+            
+            <div class="about-me">
+               <h4>More about me</h4>
+
+               <p>I build new projects and that is fun and loving to me</p>
+               <p>while problem solving is part of me. We just have to make it work and perfect</p>
+             
+               
+                
+            </div>
+            
+             <hr>
+
+             <h4>TOP EXPERTISE</h4>
+             <p>Front-End-Development including UI/Ux design:
+                <a href="resume.pdf">Download Resume</a>
+             </p>
+             <div id="skills">
+             <ul>
+                <li>Javascript</li>
+                <li>React</li>
+                <li>UX/UI design</li>
+                <li>HTML/CSS</li>  
+            </ul>
+        </div>
+            <div class="social-links">
+
+            </div>
+
+           </div>
         </div>
     </section>
 
     <section class="s1">
         <div class="main-container">
-           Portfolio
+            <h3 style="text-align: center;">Some of my projects</h3>
+           
+            <div class="post-wrapper">
+                 
+                <div>
+                    <div class="post">
+                    <img class="thumbnail" src="social1.png"> 
+                    <div class="post-preview">
+                    <h6 class="post-title">Post Title</h6>
+                    <p class="post-intro">Social website application. Personal project after course completion.</p>
+                    <a href="poste.html">Read More</a>
+                </div>  
+                    </div>
+            </div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="commerce1.png"> 
+                        <div class="post-preview">
+                        <h6 class="post-title">Post Title</h6>
+                        <p class="post-intro">E-commerce application for online store. Personal project after course completion.</p>
+                        <a href="#">Read More</a>
+                    </div>  
+                    </div>
+                </div>
+
+                <div>
+                   <div class="post">
+                        <img class="thumbnail" src="fig.png"> 
+                        <div class="post-preview">
+                        <h6 class="post-title">Post Title</h6>
+                        <p class="post-intro">Figma UX/UI design. A Meta course project for UI/UX course.</p>
+                        <a href="#">Read More</a>
+                        </div>  
+                    </div>
+                </div>
+
+
+
+           </div>
         </div>
     </section>
     
     <section class="s2">
         <div class="main-container">
-            Contact
+            <h3 style="text-align: center;">Get In Touch</h3>
+           
+            <form id="contact-form">
+            <label>Name</label>
+            <input class="input-field" type="text" name="name">
+
+            <label>Subject</label>
+            <input class="input-field" type="text" name="subject">
+
+            <label>Email</label>
+            <input class="input-field" type="text" name="email">
+
+            <label>Message</label>
+            <textarea class="input-field" name="message"></textarea>
+
+            <input id="submit-btn" type="submit" value="Send">
+           </form>
         </div>
     </section>
-
+     <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
