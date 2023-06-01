@@ -269,12 +269,24 @@ padding: 10px;
     left: -5px;
 }
 
-.about-wrapper{
+/* .about-wrapper{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320, 1fr));
     padding-bottom: 50px;
     padding-top: 50px;
+    margin: 50px;
+} */
+
+.about-wrapper{
+    align-content: center;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    margin: 50px;
+
 }
+
+
+
 
 #skills{
     display: flex;
@@ -306,7 +318,7 @@ padding: 10px;
 }
 
 .post-preview{
-  background-color: fff;
+  background-color: #fff;
   padding: 15px;  
 }
 
