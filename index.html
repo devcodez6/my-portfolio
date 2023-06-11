@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio website</title>
+    <title>devcodez</title>
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet"> 
 
@@ -17,7 +17,7 @@
     <section class="s1">
         <div class="main-container">
            <div class="greeting-wrapper">
-            <h1>Hi i'm Oniyide Abdurrazzaaq</h1>
+            <h1>Hi, i'm Oniyide Abdurrazzaaq</h1>
         </div>
 
         <div class="intro-wrapper">
@@ -74,7 +74,7 @@
             <div class="about-me">
                <h4>More about me</h4>
 
-               <p>I build new projects and that is fun and loving to me.</p>
+               <p>Building new projects is fun and loving to me.</p>
                <p>while problem solving is part of me. We just have to make it work and perfect.</p>
 
             </div>
@@ -151,19 +151,21 @@
             <h3 style="text-align: center;">Get In Touch</h3>
            
             <form id="contact-form">
+                <a href="https://mail.google.com/mail/u/1/?ogbl#inbox"></a>
             <label>Name</label>
             <input class="input-field" type="text" name="name">
 
             <label>Subject</label>
             <input class="input-field" type="text" name="subject">
 
-            <label>Email</label>
-            <input class="input-field" type="text" name="email">
-
+            <label for="email">Enter your email</label>
+            <input class="input-field" type="email" id="email" name="email">
+            
+            
             <label>Message</label>
             <textarea class="input-field" name="message"></textarea>
 
-            <input id="submit-btn" type="submit" value="Send">
+            <input  onclick="alert('Are you sure you want to continue?')" id="submit-btn" type="submit" value="Send" >
             
            </form>
         </div>
